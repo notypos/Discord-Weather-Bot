@@ -10,7 +10,7 @@ temperature_, edited_address_, weather_icon_, weather_description_, image_url_, 
 # image_file_ = Image.open(image_stream_)
 # image_file_.save("weather_icon.png")
 
-webhook_url = 'https://discord.com/api/webhooks/1177670103752515584/DJd25scHB96dBa-2fgnEqwsbiKTsPGT6q2hnteuG0M87le79wvjD9cwdYHQo_2J2inPT'
+webhook_url = 'https://discord.com/api/webhooks/webhook-here'
 data = {
     "avatar_url": "https://www.shutterstock.com/image-photo/mostly-sunny-weather-260nw-286242953.jpg",
     "embeds": [
