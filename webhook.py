@@ -1,10 +1,6 @@
 import requests
-import base64
-from io import BytesIO
-from PIL import Image
 from sel_tut import get_weather_data
-import json
-import os
+
 
 # Get the weather data
 temperature_, edited_address_, weather_icon_, weather_description_, image_url_, img_ = get_weather_data()
@@ -22,13 +18,13 @@ data = {
             "title": f"Current Weather of {edited_address_}",
             "thumbnail": {
                 "url": image_url_
-            },  # Fixed: Added a comma here
+            }, 
             "fields": [
                 {
                     "name": "Temperature",
-                    "value": f"{temperature_} °F",  # Fixed: Changed "description" to "value"
+                    "value": f"{temperature_} °F", 
                     "inline": True
-                },  # Fixed: Added a comma here
+                }, 
                 {
                     "name": "Weather",
                     "value": weather_description_,
@@ -40,7 +36,7 @@ data = {
 }
 
 
-#files_ = {'file': ('weather_icon.png', open('weather_icon.png', 'rb'))}
+
 r = requests.post(webhook_url, json=data)
 
 print(r)

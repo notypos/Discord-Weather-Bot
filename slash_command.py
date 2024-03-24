@@ -29,13 +29,13 @@ async def weather(interaction: discord.Interaction, location: str):
             "title": f"Current Weather of {edited_address_}",
             "thumbnail": {
                 "url": image_url_
-            },  # Fixed: Added a comma here
+            }, 
             "fields": [
                 {
                     "name": "Temperature",
-                    "value": f"{temperature_} °F",  # Fixed: Changed "description" to "value"
+                    "value": f"{temperature_} °F", 
                     "inline": True
-                },  # Fixed: Added a comma here
+                }, 
                 {
                     "name": "Weather",
                     "value": weather_description_,
