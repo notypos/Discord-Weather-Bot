@@ -21,7 +21,7 @@ async def on_ready():
 async def weather(interaction: discord.Interaction, location: str):
     await interaction.response.defer()
     temperature_, edited_address_, weather_icon_, weather_description_, image_url_, img_ = get_weather_data(location)
-    webhook_url = 'https://discord.com/api/webhooks/1177670103752515584/DJd25scHB96dBa-2fgnEqwsbiKTsPGT6q2hnteuG0M87le79wvjD9cwdYHQo_2J2inPT'
+    webhook_url = 'https://discord.com/api/webhooks/webhook-here'
     data = {
     "avatar_url": "https://www.shutterstock.com/image-photo/mostly-sunny-weather-260nw-286242953.jpg",
     "embeds": [
@@ -61,4 +61,4 @@ async def hello(interaction: discord.Interaction):
 async def say(interaction: discord.Interaction, thing_to_say: str):
     await interaction.response.send_message(f"Hey {interaction.user.mention} said: '{thing_to_say}'")
 
-bot.run("MTE3ODc2NzU0MjE0NDIyMTIxNQ.GrGUSa.XUWHcaBhNxkt8AgMGr8APYZwG-R-ERBhYJH2cE")
+bot.run("TOKEN-HERE")
